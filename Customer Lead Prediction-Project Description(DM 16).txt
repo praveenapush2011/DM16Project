@@ -1,0 +1,55 @@
+
+Project Title: Customer Lead Prediction
+Technologies: Data Cleansing, EDA, Visualization, Regression(Optional), Tableau/Power-BI
+Domain: Ed-Tech
+
+
+Problem Statement:
+The online Edu-Tech platform that generates leads through various sources. The marketing and sales teams want to optimize their lead conversion rates and improve the efficiency of their lead management process. The primary goal is to predict whether a lead will be successfully converted into a customer or not. This prediction can help the Edu-Tech company to prioritize leads with the highest conversion potential and tailor marketing and sales strategies accordingly. The analysis and prediction (optional) will be based on the information available in the provided dataset.
+
+About Data:
+
+Context
+
+This dataset contains one file for a lead generation and conversion campaign for an Edu-tech company. The data includes information about the leads, their activity, and their preferences
+
+ 
+Problem to be answered:
+
+This customer data holds immense potential for improving customer acquisition, optimizing marketing efforts, and enhancing lead conversion rates. By thoroughly analyzing this data, we can extract valuable insights into customer behaviors, preferences, and conversion patterns. These insights serve as the foundation for developing targeted marketing campaigns, refining lead nurturing strategies, and identifying areas for improvement across the sales and marketing process.
+
+Predictive modeling is not always essential. In many cases, the insights gained from exploratory data analysis alone can be sufficient to drive positive outcomes. However, if prediction is necessary, the insights gained from analysis provide a solid foundation for developing more accurate and reliable predictive models.
+
+Data analysis and understanding, Edu-Tech Company can gain a significant competitive edge and achieve its strategic objectives. This data-driven approach will empower the company to make informed decisions, optimize resource allocation, and ultimately, cultivate a thriving customer base.
+
+Conclusion/Suggestion like:
+
+●	Which leads are most likely to convert into paying customers?
+●	How can the platform prioritize and allocate resources to leads with the highest conversion ?
+●	What marketing and sales strategies can be tailored to specific lead segments?
+●	How can the lead management process be streamlined and made more effective?
+
+
+Note:
+After completion of all the task you need to create a PowerPoint presentation that should contain the:
+1.	Problem Statement
+
+2.	Tools Used
+
+3.	Approaches
+
+4.	EDA Insights
+
+5.	Conclusion/Suggestion
+ 
+
+Project Evaluation metrics:
+
+●	Project evaluation will be done in the live session and have to showcase the approaches done to complete the project
+●	You are supposed to write a code in a modular fashion (in functional blocks)
+●	Maintainable: It can be maintained, even as your codebase grows.
+●	Portable: It works the same in every environment (operating system)
+●	You have to maintain your code on GitHub.(Mandatory)
+●	You have to keep your GitHub repo public so that anyone can check yourcode.(Mandatory)
+●	Proper readme file you have to maintain for any project development(Mandatory)
+●	Follow the coding standards: https://www.python.org/dev/peps/pep-0008/You should include basic workflow and execution of the entire project in the readme file on GitHub
