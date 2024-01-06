@@ -1,0 +1,12 @@
+POWER BI:
+
+The Lead Management process requires comprehensive visualization and analysis to faciltate informed decision-making.
+Utilizing Power BI, we aim to create interactive and insightful dashboards that provide holistic view of lead data.
+
+These visualizations will help you gain insights into lead distribution, conversion rates, engagement patters, 
+and other key aspect of your data.
+
+Below is the Power BI link which shows the visualization of customer lead prediction data:
+
+
+https://app.powerbi.com/Redirect?action=openreport&context=Annotate&ctid=0d510403-e9e2-4f2e-b889-a0ab9aa368cb&pbi_source=mobile_android&groupObjectId=893f9c77-8d27-4edb-a8ce-0386ad4344e7&appId=&reportObjectId=75759d72-fd35-40ce-99d5-f27f407e3351&reportPage=ReportSection&bookmarkGuid=f4960bfc-45d8-4450-a478-7c2fa32b3667
