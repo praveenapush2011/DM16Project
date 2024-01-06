@@ -1,0 +1,242 @@
+create database edutech
+use edutech
+
+create table leadinfo(
+prospectID int primary key,
+leadnumber int,
+leadorigin varchar(50),
+leadsource varchar(50),
+donotemail boolean,
+donotcall boolean,
+converted boolean,
+totalvisits int,
+totaltimespentonwebsite int,
+pageviews int,
+lastactivity varchar(50),
+country varchar(50),
+specialization varchar(50),
+howdidyouhearthecourse varchar(50),
+occupation varchar(50),
+whatmatterschoosingthecourse varchar(50),
+search boolean,
+magazine boolean,
+newspaperarticle boolean,
+educationforums boolean,
+digitaladvertisement boolean,
+recommendations boolean,
+tags varchar(255),
+leadquality varchar(50),
+city varchar(50),
+agreetopaythroughcheque boolean,
+lastnotableactivity varchar(50)
+);
+
+insert into leadinfo(
+prospectID,
+leadnumber,
+leadorigin,
+leadsource,
+donotemail,
+donotcall,
+converted,
+totalvisits,
+totaltimespentonwebsite,
+pageviews,
+lastactivity,
+country,
+specialization,
+howdidyouhearthecourse,
+occupation,
+whatmatterschoosingthecourse,
+search,
+magazine,
+newspaperarticle,
+educationforums,
+digitaladvertisement,
+recommendations,
+tags,
+leadquality,
+city,
+agreetopaythroughcheque,
+lastnotableactivity
+)values
+(1, 1001, 'online', 'website',false, true, true, 5, 120 , 3, 'email opened', 'usa', 'engineering', 'online advertising', 'student', 'course content', true, false, true, false, true, false, 'interested', 'high', 'newyork', true, 'contacted'),
+(2, 1002, 'offline', 'event',true, false, false, 3, 50 , 2, 'attended event', 'india', 'business', 'event', 'professional', 'career growth', false, true, false, true, false, true, 'enquiry', 'medium', 'mumbai', false, 'visited website'),
+(3, 1003, 'online', 'social media',false, true, true, 7, 180, 4, 'clicked on ad', 'canada', 'science', 'social media', 'student', 'course content', true, false, false, false, true, false, 'enrolled', 'low', 'toronto', false, 'email bounced'),
+(4, 1004, 'online', 'social media',false, true, true, 15, 200, 5, 'engaged with blog', 'india', 'business', 'social media', 'entrepreneur', 'career advancement', true, false, false, true, true, false, 'entrepreneurship', 'low', 'mumbai', true, 'downloaed e-book'),
+(5, 1005, 'online', 'website',false, true, false, 10, 120 , 3, 'form submission', 'usa', 'technology', 'online search', 'software engineer', 'reputation and recognition', true, false, true, false, true, false, 'enrolled', 'high', 'newyork', true, 'attended webinar'),
+(6, 1006, 'online', 'social media',false, true, true, 15, 200 , 5, 'engaged with blog', 'india', 'business', 'social media', 'entrepreneur', 'course content', true, false, false, true, true, false, 'entrepreneurship', 'low', 'mumbai', false, 'email bounced'),
+(7, 1007, 'online', 'email campaign',false, false, false, 8, 150 , 4, 'opened email', 'australia', 'finance', 'email campaign', 'financial analyst', 'course content and syllabus', true, true, false, false, true, true, 'enrolled', 'high', 'sydney', true, 'sent inquiry'),
+(8, 1008, 'ofline', 'referral', true, true, false, 12, 180, 3, 'attended seminar', 'uk', 'arts', 'word of mouth', 'artist', 'personal interest', false, false, true, false, false, false, 'enrolled', 'medium', 'london', true, 'registered for trail class'),
+(9, 1009, 'online', 'search engine', false, true, true, 20, 180, 6, 'online quiz compeletion', 'usa', 'engineering', 'online search', 'engineer', 'skill enhancement', true, false, false, false, true, false, 'technical skills', 'medium', 'san francisco', true, 'attended online demo'),
+(10, 1010, 'offline', 'workshop', false, true, false, 6, 90, 2, 'attended workshop', 'india', 'marketing', 'event partcipation', 'marketing professional', 'career growth', true, false, false, false, true, false, 'marketing strategies', 'high', 'mumbai', true, 'contacted sales team'),
+(11, 1011, 'online', 'webinar', true, false, true, 18, 220, 5, 'webinar partcipation', 'usa', 'science', 'online promotion', 'scientist', 'educational reputation', false, true, false, false, true, true, 'scientific research', 'medium', 'boston', false, 'attended broucher'),
+(12, 1012, 'online', 'social media', false, true, false, 10, 120, 3, 'engaged with social post', 'canada', 'technology', 'social media', 'IT', 'skill enhancement', false, false, true, true, false, false, 'tech inovations', 'low', 'toronto', true, 'attended virtual event'),
+(13, 1013, 'offline', 'referral', true, true, false, 15, 180, 4, 'referred by friend', 'australia', 'education', 'word of mouth', 'educator', 'professional development', false, false, true, false, false, true, 'education sector', 'medium', 'sydney', false, 'expressed interest in cosultation'),
+(14, 1014, 'online', 'social media', false, true, false, 8, 100, 2, 'engaged with video content', 'india', 'engineering', 'online search', 'student', 'skill enhancement', true, false, false, false, true, false, 'technical skills', 'medium', 'banglore', true, 'attended online demo'),
+(15, 1015, 'offline', 'event', true, false, false, 5, 70, 3, 'attended conference', 'usa', 'finance', 'event participation', 'financial planner', 'career growth', false, true, false, false, false, false, 'financial planning', 'low', 'newyork', false, 'sent broucher request'),
+(16, 1016, 'online', 'email campaign', false, true, false, 12, 180, 4, 'opened newsletter', 'canada', 'healthcare', 'email campaign', 'nurse', 'course content and syllabus', true, false, false, false, true, false, 'healthcare professionals', 'high', 'toronto', true, 'attended online Q&A session'),
+(17, 1017, 'offline', 'referral', true, true, false, 10, 120, 3, 'referred by colleague', 'australia', 'technology', 'word of mouth', 'IT', 'skill enhancement', false, false, true, false, false, true, 'technical skills', 'medium', 'san francisco', true, 'attended online demo'),
+(18, 1018, 'online', 'search engine', false, false, true, 15, 200, 5, 'online course enroll', 'uk', 'marketing', 'online search', 'marketing manager', 'skill enhancement', true, false, false, false, true, false, 'digital marketing', 'high', 'london', false, 'contacted sales representative'),
+(19, 1019, 'online', 'webinar', false, true, true, 20, 250, 6, 'participated in webinar series', 'usa', 'science', 'online promotion', 'research scientist', 'educational reputation', false, true, false, false, true, true, 'scientific research', 'high', 'san francisco', true, 'recevied course catalog'),
+(20, 1020, 'online', 'search engine', false, false, false, 10, 130, 3, 'enagaged with social post', 'uk', 'technology', 'social media', 'IT', 'skill enhancement', true, false, false, false, true, false, 'technical skills', 'high', 'london', true, 'registered for online free course');
+(21, 1021, 'online', 'website',false, true, true, 6, 250 , 3, 'email opened', 'india', 'engineering', 'online advertising', 'student', 'course content', true, true, true, false, true, false, 'interested', 'low', 'kashmir', true, 'contacted');
+(22, 1022, 'online', 'email campaign',false, false, true, 18, 220 , 4, 'opened monthly newsletter', 'canada', 'finance', 'online advertising', 'financial analyst', 'course content', false, true, false, false, false, true, 'interested', 'medium', 'toronto', true, 'attended virtual networking session'),
+(23, 1023, 'offline', 'event',false, false, false, 9, 250 , 4, 'attended event', 'india', 'business', 'event', 'professional', 'career growth', false, true, false, true, true, true, 'enquiry', 'medium', 'mumbai', false, 'visited website'),
+(25, 1024, 'online', 'online search',false, true, true, 8, 280, 5, 'clicked on ad', 'india', 'science', 'social media', 'student', 'course content', true, true, true, false, true, false, 'enrolled', 'low', 'banglore', true, 'email bounced'),
+(26, 1026, 'online', 'webinar',false, false, true, 15, 190 , 4, 'webinar on advanced topics', 'usa', 'science', 'online promotion', 'researcher', 'educational reputation', false, true, false, false, true, true, 'scientific research', 'high', 'san francisco', false, 'received research paper samples'),
+(27, 1027, 'offline', 'worksop',true, false, false, 7, 100 , 2, 'attended event', 'india', 'business', 'event', 'professional', 'career growth', false, true, false, true, true, true, 'enquiry', 'medium', 'mumbai', true, 'visited website'),
+(28, 1028, 'online', 'online search',false, true, true, 8, 280, 5, 'clicked on ad', 'india', 'science', 'social media', 'student', 'course content', true, true, true, false, true, false, 'enrolled', 'high', 'mumbai', false, 'email bounced'),
+(29, 1029, 'offline', 'worksop',true, false, false, 7, 100 , 2, 'attended event', 'india', 'business', 'event', 'professional', 'career growth', false, true, false, true, true, true, 'enquiry', 'medium', 'mumbai', true, 'visited website'),
+(30, 1030, 'online', 'social media',true, true, true, 8, 280, 5, 'clicked on ad', 'india', 'science', 'social media', 'student', 'career growth', true, true, false, false, true, false, 'enrolled', 'high', 'banglore', true, 'email bounced');
+
+describe leadinfo
+select * from leadinfo
+
+---------- which leads are most likely to convert into paying customers:
+
+select * from leadinfo
+where converted=true
+order by totalvisits desc, totaltimespentonwebsite desc, pageviews desc;
+
+--------- what marketing and sales strategies can be tailored to specific lead segments:
+
+select leadsource, leadorigin, leadquality, occupation, specialization,
+count(*) as leadcount,
+avg(converted) as conversionrate,
+avg(totalvisits) as averagevisits,
+avg(totaltimespentonwebsite) as averagetimespent,
+avg(pageviews) as averagepageviews
+from leadinfo
+group by
+leadsource, leadorigin, leadquality, occupation, specialization
+order by
+conversionrate desc, averagevisits desc, averagetimespent desc, averagepageviews desc;
+
+
+---------how can the platform prioritize and allocate resources to leads with the highest conversion:
+
+select * from leadinfo
+order by converted desc, totalvisits desc, totaltimespentonwebsite desc
+limit 10;
+
+-------how can the lead management process be streamlined and made more effective:
+
+-------identify unattended leads:
+
+select * from leadinfo
+where lastnotableactivity is null;
+
+-------- prioritize high value leads:
+
+select * from leadinfo
+order by totaltimespentonwebsite desc, pageviews desc
+limit 10;
+
+-------- analyse conversion rates by source:
+
+select leadsource, avg(converted) as conversionrate
+from leadinfo
+group by leadsource;
+
+--------- identify leads with potential issues:
+
+select * from leadinfo
+where donotemail = true or donotcall = true;
+
+---------- monitor lead quuality:
+
+select tags, avg(totalvisits) as avgvisits, avg(pageviews) from leadinfo
+group by tags;
+
+---------- track followup activities:
+
+select prospectID, lastnotableactivity
+from leadinfo
+where lastnotableactivity is not null
+and converted = false;
+
+----------- EDA insights
+---------- overview of data:
+
+select * from leadinfo
+limit 5;
+
+--------- summary statictics:
+
+select count(*) as totalleads,
+avg(totalvisits) as avgvisits,
+avg(totaltimespentonwebsite) as avgtimespent,
+avg(pageviews) as avgpageviews
+from leadinfo;
+
+------- conversion rate:
+
+select avg(converted) as conversionrate
+from leadinfo
+
+---------- lead source analysis:
+
+select leadsource, count(*) as leadcount
+from leadinfo
+group by leadsource
+order by leadcount desc;
+
+--------countrywise analysis:
+
+select country, count(*) as leadcount
+from leadinfo
+group by country
+order by leadcount desc;
+
+---------engagement metrics:
+
+select avg(totalvisits) as avgvisits,
+avg(totaltimespentonwebsite) as avgtimespent,
+avg(pageviews) as avgpageviews
+from leadinfo;
+
+------- conversion alaysis by tags:
+
+select tags, avg(converted) as conversionrate
+from leadinfo
+group by tags
+order by conversionrate desc;
+
+--------occupation based analysis:
+
+select occupation, count(*) as leadcount
+from leadinfo
+group by occupation
+order by leadcount desc;
+
+-------- conversion status by last activity:
+
+select lastnotableactivity, converted, count(*) as activitycount
+from leadinfo
+group by lastnotableactivity,converted;
+
+----------- conversion rate analysis:
+
+select converted, count(*) as leadcount,
+avg(totalvisits) as averagevisits,
+avg(totaltimespentonwebsite) as averagetimespent
+from leadinfo
+group by converted;
+
+-------specialization:
+
+select specialization, count(*) as leadcount
+from leadinfo
+group by specialization
+order by leadcount desc;
+
+---------- lead source analysis:
+
+select leadsource, count(*) as leadcount,
+avg(converted) as conversionrate
+from leadinfo
+group by
+leadsource
+order by
+leadcount desc;
